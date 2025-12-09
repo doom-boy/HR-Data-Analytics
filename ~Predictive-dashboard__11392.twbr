@@ -1,0 +1,2410 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.1003.1601                               -->
+<workbook original-version='18.1' source-build='2025.2.4 (20252.25.1003.1601)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='employee_attrition_predictions' inline='true' name='federated.048z5ga1svnkl618dzk8e0jngzdh' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='employee_attrition_predictions' name='textscan.08u88ln061ulq51h8w0mc0hmub29'>
+            <connection class='textscan' directory='C:/Users/jenson/Desktop' filename='employee_attrition_predictions.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.08u88ln061ulq51h8w0mc0hmub29' name='employee_attrition_predictions.csv' table='[employee_attrition_predictions#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='EmployeeID' ordinal='0' />
+            <column datatype='string' name='FirstName' ordinal='1' />
+            <column datatype='string' name='LastName' ordinal='2' />
+            <column datatype='integer' name='Attrition' ordinal='3' />
+            <column datatype='integer' name='Attrition_Prediction' ordinal='4' />
+            <column datatype='real' name='Attrition_Probability' ordinal='5' />
+            <column datatype='integer' name='Gender' ordinal='6' />
+            <column datatype='integer' name='Age' ordinal='7' />
+            <column datatype='integer' name='BusinessTravel' ordinal='8' />
+            <column datatype='string' name='Department' ordinal='9' />
+            <column datatype='integer' name='DistanceFromHome (KM)' ordinal='10' />
+            <column datatype='integer' name='State' ordinal='11' />
+            <column datatype='integer' name='Ethnicity' ordinal='12' />
+            <column datatype='integer' name='Education' ordinal='13' />
+            <column datatype='integer' name='EducationField' ordinal='14' />
+            <column datatype='integer' name='JobRole' ordinal='15' />
+            <column datatype='integer' name='MaritalStatus' ordinal='16' />
+            <column datatype='integer' name='Salary' ordinal='17' />
+            <column datatype='integer' name='StockOptionLevel' ordinal='18' />
+            <column datatype='integer' name='OverTime' ordinal='19' />
+            <column datatype='integer' name='YearsAtCompany' ordinal='20' />
+            <column datatype='integer' name='YearsInMostRecentRole' ordinal='21' />
+            <column datatype='integer' name='YearsSinceLastPromotion' ordinal='22' />
+            <column datatype='integer' name='YearsWithCurrManager' ordinal='23' />
+            <column datatype='integer' name='PerformanceID' ordinal='24' />
+            <column datatype='integer' name='EnvironmentSatisfaction' ordinal='25' />
+            <column datatype='integer' name='JobSatisfaction' ordinal='26' />
+            <column datatype='integer' name='RelationshipSatisfaction' ordinal='27' />
+            <column datatype='integer' name='TrainingOpportunitiesWithinYear' ordinal='28' />
+            <column datatype='integer' name='TrainingOpportunitiesTaken' ordinal='29' />
+            <column datatype='integer' name='WorkLifeBalance' ordinal='30' />
+            <column datatype='integer' name='SelfRating' ordinal='31' />
+            <column datatype='integer' name='ManagerRating' ordinal='32' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[employee_attrition_predictions.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EmployeeID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EmployeeID]</local-name>
+            <parent-name>[employee_attrition_predictions.csv]</parent-name>
+            <remote-alias>EmployeeID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FirstName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FirstName]</local-name>
+            <parent-name>[employee_attrition_predictions.csv]</parent-name>
+            <remote-alias>FirstName</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LastName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LastName]</local-name>
+            <parent-name>[employee_attrition_predictions.csv]</parent-name>
+            <remote-alias>LastName</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Attrition</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Attrition]</local-name>
+            <parent-name>[employee_attrition_predictions.csv]</parent-name>
+            <remote-alias>Attrition</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Attrition_Prediction</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Attrition_Prediction]</local-name>
+            <parent-name>[employee_attrition_predictions.csv]</parent-name>
+            <remote-alias>Attrition_Prediction</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Attrition_Probability</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Attrition_Probability]</local-name>
+            <parent-name>[employee_attrition_predictions.csv]</parent-name>
+            <remote-alias>Attrition_Probability</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[employee_attrition_predictions.csv]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[employee_attrition_predictions.csv]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BusinessTravel</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BusinessTravel]</local-name>
+            <parent-name>[employee_attrition_predictions.csv]</parent-name>
+            <remote-alias>BusinessTravel</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Department</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Department]</local-name>
+            <parent-name>[employee_attrition_predictions.csv]</parent-name>
+            <remote-alias>Department</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DistanceFromHome (KM)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DistanceFromHome (KM)]</local-name>
+            <parent-name>[employee_attrition_predictions.csv]</parent-name>
+            <remote-alias>DistanceFromHome (KM)</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[employee_attrition_predictions.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ethnicity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Ethnicity]</local-name>
+            <parent-name>[employee_attrition_predictions.csv]</parent-name>
+            <remote-alias>Ethnicity</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Education</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Education]</local-name>
+            <parent-name>[employee_attrition_predictions.csv]</parent-name>
+            <remote-alias>Education</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EducationField</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EducationField]</local-name>
+            <parent-name>[employee_attrition_predictions.csv]</parent-name>
+            <remote-alias>EducationField</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>JobRole</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[JobRole]</local-name>
+            <parent-name>[employee_attrition_predictions.csv]</parent-name>
+            <remote-alias>JobRole</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MaritalStatus</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MaritalStatus]</local-name>
+            <parent-name>[employee_attrition_predictions.csv]</parent-name>
+            <remote-alias>MaritalStatus</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Salary</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Salary]</local-name>
+            <parent-name>[employee_attrition_predictions.csv]</parent-name>
+            <remote-alias>Salary</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StockOptionLevel</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[StockOptionLevel]</local-name>
+            <parent-name>[employee_attrition_predictions.csv]</parent-name>
+            <remote-alias>StockOptionLevel</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OverTime</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OverTime]</local-name>
+            <parent-name>[employee_attrition_predictions.csv]</parent-name>
+            <remote-alias>OverTime</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YearsAtCompany</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[YearsAtCompany]</local-name>
+            <parent-name>[employee_attrition_predictions.csv]</parent-name>
+            <remote-alias>YearsAtCompany</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YearsInMostRecentRole</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[YearsInMostRecentRole]</local-name>
+            <parent-name>[employee_attrition_predictions.csv]</parent-name>
+            <remote-alias>YearsInMostRecentRole</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YearsSinceLastPromotion</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[YearsSinceLastPromotion]</local-name>
+            <parent-name>[employee_attrition_predictions.csv]</parent-name>
+            <remote-alias>YearsSinceLastPromotion</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YearsWithCurrManager</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[YearsWithCurrManager]</local-name>
+            <parent-name>[employee_attrition_predictions.csv]</parent-name>
+            <remote-alias>YearsWithCurrManager</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PerformanceID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PerformanceID]</local-name>
+            <parent-name>[employee_attrition_predictions.csv]</parent-name>
+            <remote-alias>PerformanceID</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EnvironmentSatisfaction</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EnvironmentSatisfaction]</local-name>
+            <parent-name>[employee_attrition_predictions.csv]</parent-name>
+            <remote-alias>EnvironmentSatisfaction</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>JobSatisfaction</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[JobSatisfaction]</local-name>
+            <parent-name>[employee_attrition_predictions.csv]</parent-name>
+            <remote-alias>JobSatisfaction</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RelationshipSatisfaction</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RelationshipSatisfaction]</local-name>
+            <parent-name>[employee_attrition_predictions.csv]</parent-name>
+            <remote-alias>RelationshipSatisfaction</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TrainingOpportunitiesWithinYear</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TrainingOpportunitiesWithinYear]</local-name>
+            <parent-name>[employee_attrition_predictions.csv]</parent-name>
+            <remote-alias>TrainingOpportunitiesWithinYear</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TrainingOpportunitiesTaken</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TrainingOpportunitiesTaken]</local-name>
+            <parent-name>[employee_attrition_predictions.csv]</parent-name>
+            <remote-alias>TrainingOpportunitiesTaken</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WorkLifeBalance</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WorkLifeBalance]</local-name>
+            <parent-name>[employee_attrition_predictions.csv]</parent-name>
+            <remote-alias>WorkLifeBalance</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SelfRating</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SelfRating]</local-name>
+            <parent-name>[employee_attrition_predictions.csv]</parent-name>
+            <remote-alias>SelfRating</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ManagerRating</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ManagerRating]</local-name>
+            <parent-name>[employee_attrition_predictions.csv]</parent-name>
+            <remote-alias>ManagerRating</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='None' datatype='integer' name='[Attrition Probability (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='-2' formula='[Attrition_Probability]' peg='0' size='0.054' />
+      </column>
+      <column caption='Attrition Prediction' datatype='integer' name='[Attrition_Prediction]' role='measure' type='quantitative' />
+      <column caption='Attrition Probability' datatype='real' name='[Attrition_Probability]' role='measure' type='quantitative' />
+      <column caption='Business Travel' datatype='integer' name='[BusinessTravel]' role='measure' type='quantitative' />
+      <column caption='Employee Count' datatype='integer' name='[Calculation_1159724800942080]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([Attrition_Prediction])' />
+      </column>
+      <column caption='Actual Attrition Rate' datatype='real' name='[Calculation_1159724800978945]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([Attrition])' />
+      </column>
+      <column caption='High-Risk Employees' datatype='integer' name='[Calculation_1159724801011714]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Attrition_Probability] &gt; 0.6 THEN 1 ELSE 0 END' />
+      </column>
+      <column caption='High Risk Flag' datatype='integer' name='[Calculation_1159724801089539]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Calculation_1159724801011714])' />
+      </column>
+      <column caption='Education Field' datatype='integer' name='[EducationField]' role='measure' type='quantitative' />
+      <column caption='Employee ID' datatype='string' name='[EmployeeID]' role='dimension' type='nominal' />
+      <column caption='Environment Satisfaction' datatype='integer' name='[EnvironmentSatisfaction]' role='measure' type='quantitative' />
+      <column caption='First Name' datatype='string' name='[FirstName]' role='dimension' type='nominal' />
+      <column caption='Job Role' datatype='integer' name='[JobRole]' role='measure' type='quantitative' />
+      <column caption='Job Satisfaction' datatype='integer' name='[JobSatisfaction]' role='measure' type='quantitative' />
+      <column caption='Last Name' datatype='string' name='[LastName]' role='dimension' type='nominal' />
+      <column caption='Manager Rating' datatype='integer' name='[ManagerRating]' role='measure' type='quantitative' />
+      <column caption='Marital Status' datatype='integer' name='[MaritalStatus]' role='measure' type='quantitative' />
+      <column caption='Over Time' datatype='integer' name='[OverTime]' role='measure' type='quantitative' />
+      <column caption='Performance ID' datatype='integer' name='[PerformanceID]' role='dimension' type='ordinal' />
+      <column caption='Relationship Satisfaction' datatype='integer' name='[RelationshipSatisfaction]' role='measure' type='quantitative' />
+      <column caption='Self Rating' datatype='integer' name='[SelfRating]' role='measure' type='quantitative' />
+      <column caption='Stock Option Level' datatype='integer' name='[StockOptionLevel]' role='measure' type='quantitative' />
+      <column caption='Training Opportunities Taken' datatype='integer' name='[TrainingOpportunitiesTaken]' role='measure' type='quantitative' />
+      <column caption='Training Opportunities Within Year' datatype='integer' name='[TrainingOpportunitiesWithinYear]' role='dimension' type='quantitative' />
+      <column caption='Work Life Balance' datatype='integer' name='[WorkLifeBalance]' role='measure' type='quantitative' />
+      <column caption='Years At Company' datatype='integer' name='[YearsAtCompany]' role='measure' type='quantitative' />
+      <column caption='Years In Most Recent Role' datatype='integer' name='[YearsInMostRecentRole]' role='measure' type='quantitative' />
+      <column caption='Years Since Last Promotion' datatype='integer' name='[YearsSinceLastPromotion]' role='measure' type='quantitative' />
+      <column caption='Years With Curr Manager' datatype='integer' name='[YearsWithCurrManager]' role='measure' type='quantitative' />
+      <column caption='employee_attrition_predictions.csv' datatype='table' name='[__tableau_internal_object_id__].[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/#TableauTemp_04u318g1vfkxmm10tp7ev09ac6yl.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/09/2025 02:42:59 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>EmployeeID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[EmployeeID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>EmployeeID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>employee_attrition_predictions.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>732</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FirstName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[FirstName]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FirstName</remote-alias>
+              <ordinal>1</ordinal>
+              <family>employee_attrition_predictions.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>699</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LastName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[LastName]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LastName</remote-alias>
+              <ordinal>2</ordinal>
+              <family>employee_attrition_predictions.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>728</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Attrition</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Attrition]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Attrition</remote-alias>
+              <ordinal>3</ordinal>
+              <family>employee_attrition_predictions.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Attrition_Prediction</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Attrition_Prediction]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Attrition_Prediction</remote-alias>
+              <ordinal>4</ordinal>
+              <family>employee_attrition_predictions.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Attrition_Probability</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Attrition_Probability]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Attrition_Probability</remote-alias>
+              <ordinal>5</ordinal>
+              <family>employee_attrition_predictions.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>143</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gender</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gender</remote-alias>
+              <ordinal>6</ordinal>
+              <family>employee_attrition_predictions.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Age</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age</remote-alias>
+              <ordinal>7</ordinal>
+              <family>employee_attrition_predictions.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BusinessTravel</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[BusinessTravel]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BusinessTravel</remote-alias>
+              <ordinal>8</ordinal>
+              <family>employee_attrition_predictions.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Department</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Department]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Department</remote-alias>
+              <ordinal>9</ordinal>
+              <family>employee_attrition_predictions.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DistanceFromHome (KM)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[DistanceFromHome (KM)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DistanceFromHome (KM)</remote-alias>
+              <ordinal>10</ordinal>
+              <family>employee_attrition_predictions.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>45</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[State]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State</remote-alias>
+              <ordinal>11</ordinal>
+              <family>employee_attrition_predictions.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Ethnicity</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Ethnicity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Ethnicity</remote-alias>
+              <ordinal>12</ordinal>
+              <family>employee_attrition_predictions.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Education</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Education]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Education</remote-alias>
+              <ordinal>13</ordinal>
+              <family>employee_attrition_predictions.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>EducationField</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[EducationField]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>EducationField</remote-alias>
+              <ordinal>14</ordinal>
+              <family>employee_attrition_predictions.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>JobRole</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[JobRole]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>JobRole</remote-alias>
+              <ordinal>15</ordinal>
+              <family>employee_attrition_predictions.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MaritalStatus</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[MaritalStatus]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MaritalStatus</remote-alias>
+              <ordinal>16</ordinal>
+              <family>employee_attrition_predictions.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Salary</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Salary]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Salary</remote-alias>
+              <ordinal>17</ordinal>
+              <family>employee_attrition_predictions.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>725</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>StockOptionLevel</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[StockOptionLevel]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>StockOptionLevel</remote-alias>
+              <ordinal>18</ordinal>
+              <family>employee_attrition_predictions.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>OverTime</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[OverTime]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>OverTime</remote-alias>
+              <ordinal>19</ordinal>
+              <family>employee_attrition_predictions.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>YearsAtCompany</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[YearsAtCompany]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>YearsAtCompany</remote-alias>
+              <ordinal>20</ordinal>
+              <family>employee_attrition_predictions.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>YearsInMostRecentRole</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[YearsInMostRecentRole]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>YearsInMostRecentRole</remote-alias>
+              <ordinal>21</ordinal>
+              <family>employee_attrition_predictions.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>YearsSinceLastPromotion</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[YearsSinceLastPromotion]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>YearsSinceLastPromotion</remote-alias>
+              <ordinal>22</ordinal>
+              <family>employee_attrition_predictions.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>YearsWithCurrManager</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[YearsWithCurrManager]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>YearsWithCurrManager</remote-alias>
+              <ordinal>23</ordinal>
+              <family>employee_attrition_predictions.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PerformanceID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[PerformanceID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PerformanceID</remote-alias>
+              <ordinal>24</ordinal>
+              <family>employee_attrition_predictions.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1342</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>EnvironmentSatisfaction</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[EnvironmentSatisfaction]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>EnvironmentSatisfaction</remote-alias>
+              <ordinal>25</ordinal>
+              <family>employee_attrition_predictions.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>JobSatisfaction</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[JobSatisfaction]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>JobSatisfaction</remote-alias>
+              <ordinal>26</ordinal>
+              <family>employee_attrition_predictions.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>RelationshipSatisfaction</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[RelationshipSatisfaction]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>RelationshipSatisfaction</remote-alias>
+              <ordinal>27</ordinal>
+              <family>employee_attrition_predictions.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TrainingOpportunitiesWithinYear</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[TrainingOpportunitiesWithinYear]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TrainingOpportunitiesWithinYear</remote-alias>
+              <ordinal>28</ordinal>
+              <family>employee_attrition_predictions.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TrainingOpportunitiesTaken</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[TrainingOpportunitiesTaken]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TrainingOpportunitiesTaken</remote-alias>
+              <ordinal>29</ordinal>
+              <family>employee_attrition_predictions.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>WorkLifeBalance</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[WorkLifeBalance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>WorkLifeBalance</remote-alias>
+              <ordinal>30</ordinal>
+              <family>employee_attrition_predictions.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SelfRating</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[SelfRating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SelfRating</remote-alias>
+              <ordinal>31</ordinal>
+              <family>employee_attrition_predictions.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ManagerRating</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ManagerRating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ManagerRating</remote-alias>
+              <ordinal>32</ordinal>
+              <family>employee_attrition_predictions.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='employee_attrition_predictions.csv' id='employee_attrition_predictions.csv_79EAA3888E714281AFE3126BBBF3F5C2'>
+            <properties context=''>
+              <relation connection='textscan.08u88ln061ulq51h8w0mc0hmub29' name='employee_attrition_predictions.csv' table='[employee_attrition_predictions#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='EmployeeID' ordinal='0' />
+                  <column datatype='string' name='FirstName' ordinal='1' />
+                  <column datatype='string' name='LastName' ordinal='2' />
+                  <column datatype='integer' name='Attrition' ordinal='3' />
+                  <column datatype='integer' name='Attrition_Prediction' ordinal='4' />
+                  <column datatype='real' name='Attrition_Probability' ordinal='5' />
+                  <column datatype='integer' name='Gender' ordinal='6' />
+                  <column datatype='integer' name='Age' ordinal='7' />
+                  <column datatype='integer' name='BusinessTravel' ordinal='8' />
+                  <column datatype='string' name='Department' ordinal='9' />
+                  <column datatype='integer' name='DistanceFromHome (KM)' ordinal='10' />
+                  <column datatype='integer' name='State' ordinal='11' />
+                  <column datatype='integer' name='Ethnicity' ordinal='12' />
+                  <column datatype='integer' name='Education' ordinal='13' />
+                  <column datatype='integer' name='EducationField' ordinal='14' />
+                  <column datatype='integer' name='JobRole' ordinal='15' />
+                  <column datatype='integer' name='MaritalStatus' ordinal='16' />
+                  <column datatype='integer' name='Salary' ordinal='17' />
+                  <column datatype='integer' name='StockOptionLevel' ordinal='18' />
+                  <column datatype='integer' name='OverTime' ordinal='19' />
+                  <column datatype='integer' name='YearsAtCompany' ordinal='20' />
+                  <column datatype='integer' name='YearsInMostRecentRole' ordinal='21' />
+                  <column datatype='integer' name='YearsSinceLastPromotion' ordinal='22' />
+                  <column datatype='integer' name='YearsWithCurrManager' ordinal='23' />
+                  <column datatype='integer' name='PerformanceID' ordinal='24' />
+                  <column datatype='integer' name='EnvironmentSatisfaction' ordinal='25' />
+                  <column datatype='integer' name='JobSatisfaction' ordinal='26' />
+                  <column datatype='integer' name='RelationshipSatisfaction' ordinal='27' />
+                  <column datatype='integer' name='TrainingOpportunitiesWithinYear' ordinal='28' />
+                  <column datatype='integer' name='TrainingOpportunitiesTaken' ordinal='29' />
+                  <column datatype='integer' name='WorkLifeBalance' ordinal='30' />
+                  <column datatype='integer' name='SelfRating' ordinal='31' />
+                  <column datatype='integer' name='ManagerRating' ordinal='32' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='feature_importance' inline='true' name='federated.0hyojky158e2fq1bir3la0jbanov' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='feature_importance' name='textscan.0dzwq2j0zbw6z71ain9m30qjnhvi'>
+            <connection class='textscan' directory='C:/Users/jenson/Desktop' filename='feature_importance.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0dzwq2j0zbw6z71ain9m30qjnhvi' name='feature_importance.csv' table='[feature_importance#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Feature' ordinal='0' />
+            <column datatype='real' name='Importance' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[feature_importance.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Feature</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Feature]</local-name>
+            <parent-name>[feature_importance.csv]</parent-name>
+            <remote-alias>Feature</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[feature_importance.csv_F245FB15175044CEA133AB805D02B072]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Importance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Importance]</local-name>
+            <parent-name>[feature_importance.csv]</parent-name>
+            <remote-alias>Importance</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[feature_importance.csv_F245FB15175044CEA133AB805D02B072]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='feature_importance.csv' datatype='table' name='[__tableau_internal_object_id__].[feature_importance.csv_F245FB15175044CEA133AB805D02B072]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/#TableauTemp_1wudm2r0giro3e1f6gm49001w5mc.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/09/2025 02:43:05 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Feature</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Feature]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Feature</remote-alias>
+              <ordinal>0</ordinal>
+              <family>feature_importance.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[feature_importance.csv_F245FB15175044CEA133AB805D02B072]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Importance</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Importance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Importance</remote-alias>
+              <ordinal>1</ordinal>
+              <family>feature_importance.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[feature_importance.csv_F245FB15175044CEA133AB805D02B072]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='feature_importance.csv' id='feature_importance.csv_F245FB15175044CEA133AB805D02B072'>
+            <properties context=''>
+              <relation connection='textscan.0dzwq2j0zbw6z71ain9m30qjnhvi' name='feature_importance.csv' table='[feature_importance#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Feature' ordinal='0' />
+                  <column datatype='real' name='Importance' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='High-Risk Employees'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='employee_attrition_predictions' name='federated.048z5ga1svnkl618dzk8e0jngzdh' />
+          </datasources>
+          <datasource-dependencies datasource='federated.048z5ga1svnkl618dzk8e0jngzdh'>
+            <column caption='Attrition Probability' datatype='real' name='[Attrition_Probability]' role='measure' type='quantitative' />
+            <column caption='Employee ID' datatype='string' name='[EmployeeID]' role='dimension' type='nominal' />
+            <column caption='First Name' datatype='string' name='[FirstName]' role='dimension' type='nominal' />
+            <column caption='Last Name' datatype='string' name='[LastName]' role='dimension' type='nominal' />
+            <column-instance column='[Attrition_Probability]' derivation='Attribute' name='[attr:Attrition_Probability:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[EmployeeID]' derivation='None' name='[none:EmployeeID:nk]' pivot='key' type='nominal' />
+            <column-instance column='[FirstName]' derivation='None' name='[none:FirstName:nk]' pivot='key' type='nominal' />
+            <column-instance column='[LastName]' derivation='None' name='[none:LastName:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.048z5ga1svnkl618dzk8e0jngzdh].[none:EmployeeID:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;FF14-A43E&quot;</bucket>
+              <bucket>&quot;FD95-9EEB&quot;</bucket>
+              <bucket>&quot;FBC2-C5FA&quot;</bucket>
+              <bucket>&quot;F961-5A03&quot;</bucket>
+              <bucket>&quot;4500-37EB&quot;</bucket>
+              <bucket>&quot;F877-3BF9&quot;</bucket>
+              <bucket>&quot;F838-C681&quot;</bucket>
+              <bucket>&quot;DBF5-E57D&quot;</bucket>
+              <bucket>&quot;F523-1135&quot;</bucket>
+              <bucket>&quot;F469-0427&quot;</bucket>
+              <bucket>&quot;598D-E3B4&quot;</bucket>
+              <bucket>&quot;4B6E-3C21&quot;</bucket>
+              <bucket>&quot;8A6B-AD5C&quot;</bucket>
+              <bucket>&quot;8FD9-AA59&quot;</bucket>
+              <bucket>&quot;F3CD-9B5B&quot;</bucket>
+              <bucket>&quot;4FD5-CC71&quot;</bucket>
+              <bucket>&quot;5021-95FC&quot;</bucket>
+              <bucket>&quot;8AAD-FAFB&quot;</bucket>
+              <bucket>&quot;98EE-8547&quot;</bucket>
+              <bucket>&quot;EB81-3E51&quot;</bucket>
+              <bucket>&quot;F220-AAA6&quot;</bucket>
+              <bucket>&quot;04E6-6B61&quot;</bucket>
+              <bucket>&quot;3182-7F44&quot;</bucket>
+              <bucket>&quot;0B49-32CD&quot;</bucket>
+              <bucket>&quot;CEE1-DA0F&quot;</bucket>
+              <bucket>&quot;E9AB-3F99&quot;</bucket>
+              <bucket>&quot;5A29-B9F4&quot;</bucket>
+              <bucket>&quot;D8F6-DED3&quot;</bucket>
+              <bucket>&quot;D6BA-10A1&quot;</bucket>
+              <bucket>&quot;30CC-9AD8&quot;</bucket>
+              <bucket>&quot;A2AE-FD61&quot;</bucket>
+              <bucket>&quot;B0B9-19C6&quot;</bucket>
+              <bucket>&quot;90C4-1053&quot;</bucket>
+              <bucket>&quot;EF95-30A5&quot;</bucket>
+              <bucket>&quot;2D04-D0A5&quot;</bucket>
+              <bucket>&quot;1E20-2FFF&quot;</bucket>
+              <bucket>&quot;939F-2461&quot;</bucket>
+              <bucket>&quot;70CB-4A9B&quot;</bucket>
+              <bucket>&quot;F532-0DAF&quot;</bucket>
+              <bucket>&quot;2C0F-AAE2&quot;</bucket>
+              <bucket>&quot;D471-4BFF&quot;</bucket>
+              <bucket>&quot;12A7-AFD6&quot;</bucket>
+              <bucket>&quot;9461-9439&quot;</bucket>
+              <bucket>&quot;4875-109B&quot;</bucket>
+              <bucket>&quot;36A3-F0A5&quot;</bucket>
+              <bucket>&quot;4FBA-4591&quot;</bucket>
+              <bucket>&quot;37D7-54B9&quot;</bucket>
+              <bucket>&quot;E8EF-FA89&quot;</bucket>
+              <bucket>&quot;5605-237E&quot;</bucket>
+              <bucket>&quot;4BED-C7C2&quot;</bucket>
+              <bucket>&quot;9C27-3F5C&quot;</bucket>
+              <bucket>&quot;5634-9D10&quot;</bucket>
+              <bucket>&quot;7B96-B655&quot;</bucket>
+              <bucket>&quot;E2A0-930A&quot;</bucket>
+              <bucket>&quot;200B-1979&quot;</bucket>
+              <bucket>&quot;AE9F-5268&quot;</bucket>
+              <bucket>&quot;C973-E8E5&quot;</bucket>
+              <bucket>&quot;B8C3-5E0A&quot;</bucket>
+              <bucket>&quot;78C8-02B8&quot;</bucket>
+              <bucket>&quot;6828-1F30&quot;</bucket>
+              <bucket>&quot;3120-B11F&quot;</bucket>
+              <bucket>&quot;ACB2-6640&quot;</bucket>
+              <bucket>&quot;63B0-1036&quot;</bucket>
+              <bucket>&quot;ACA5-348E&quot;</bucket>
+              <bucket>&quot;B90D-4BEF&quot;</bucket>
+              <bucket>&quot;90EB-28D4&quot;</bucket>
+              <bucket>&quot;B49A-7D79&quot;</bucket>
+              <bucket>&quot;005C-E0FB&quot;</bucket>
+              <bucket>&quot;47C9-BD11&quot;</bucket>
+              <bucket>&quot;AACC-8B93&quot;</bucket>
+              <bucket>&quot;42F5-707F&quot;</bucket>
+              <bucket>&quot;D4DF-162F&quot;</bucket>
+              <bucket>&quot;8CC3-0C6A&quot;</bucket>
+              <bucket>&quot;DB54-E47D&quot;</bucket>
+              <bucket>&quot;D061-5CAD&quot;</bucket>
+              <bucket>&quot;7A5A-CC91&quot;</bucket>
+              <bucket>&quot;75CF-67E0&quot;</bucket>
+              <bucket>&quot;74B4-CB7A&quot;</bucket>
+              <bucket>&quot;2D25-CAE8&quot;</bucket>
+              <bucket>&quot;C579-11D1&quot;</bucket>
+              <bucket>&quot;8EF9-CECD&quot;</bucket>
+              <bucket>&quot;D383-714B&quot;</bucket>
+              <bucket>&quot;A859-9A84&quot;</bucket>
+              <bucket>&quot;ABB0-9B03&quot;</bucket>
+              <bucket>&quot;DB6B-88DA&quot;</bucket>
+              <bucket>&quot;CAD7-01BE&quot;</bucket>
+              <bucket>&quot;C1E8-5AAB&quot;</bucket>
+              <bucket>&quot;6EDB-94B7&quot;</bucket>
+              <bucket>&quot;CD59-7F94&quot;</bucket>
+              <bucket>&quot;1D87-3372&quot;</bucket>
+              <bucket>&quot;F7B0-E6B2&quot;</bucket>
+              <bucket>&quot;D712-9E1C&quot;</bucket>
+              <bucket>&quot;C1B4-46B2&quot;</bucket>
+              <bucket>&quot;6542-3E93&quot;</bucket>
+              <bucket>&quot;63D2-F412&quot;</bucket>
+              <bucket>&quot;1E4A-5810&quot;</bucket>
+              <bucket>&quot;0E79-8257&quot;</bucket>
+              <bucket>&quot;AD1C-2AC5&quot;</bucket>
+              <bucket>&quot;1A2D-52EC&quot;</bucket>
+              <bucket>&quot;DF11-9C46&quot;</bucket>
+              <bucket>&quot;1158-9E23&quot;</bucket>
+              <bucket>&quot;473C-EA4E&quot;</bucket>
+              <bucket>&quot;35D2-818A&quot;</bucket>
+              <bucket>&quot;9ED3-ED64&quot;</bucket>
+              <bucket>&quot;A409-26AC&quot;</bucket>
+              <bucket>&quot;E55D-FCA0&quot;</bucket>
+              <bucket>&quot;ABB5-0B95&quot;</bucket>
+              <bucket>&quot;3E50-011E&quot;</bucket>
+              <bucket>&quot;1C57-5F2A&quot;</bucket>
+              <bucket>&quot;8733-BC3C&quot;</bucket>
+              <bucket>&quot;12E5-9BD1&quot;</bucket>
+              <bucket>&quot;2B70-5A31&quot;</bucket>
+              <bucket>&quot;A161-29FC&quot;</bucket>
+              <bucket>&quot;E324-1C33&quot;</bucket>
+              <bucket>&quot;E73A-F20A&quot;</bucket>
+              <bucket>&quot;994A-5F84&quot;</bucket>
+              <bucket>&quot;924E-1035&quot;</bucket>
+              <bucket>&quot;79D0-C935&quot;</bucket>
+              <bucket>&quot;21C8-00EC&quot;</bucket>
+              <bucket>&quot;B437-FCF8&quot;</bucket>
+              <bucket>&quot;46D6-CA7A&quot;</bucket>
+              <bucket>&quot;A885-BF42&quot;</bucket>
+              <bucket>&quot;FFCF-0BD5&quot;</bucket>
+              <bucket>&quot;FC47-1953&quot;</bucket>
+              <bucket>&quot;EA37-AE5E&quot;</bucket>
+              <bucket>&quot;4C72-E72F&quot;</bucket>
+              <bucket>&quot;DCA7-D382&quot;</bucket>
+              <bucket>&quot;A896-CDE2&quot;</bucket>
+              <bucket>&quot;ED5D-E9D8&quot;</bucket>
+              <bucket>&quot;E1FE-67B5&quot;</bucket>
+              <bucket>&quot;C0B9-E4C1&quot;</bucket>
+              <bucket>&quot;259B-6C50&quot;</bucket>
+              <bucket>&quot;55B1-3712&quot;</bucket>
+              <bucket>&quot;C95B-FE97&quot;</bucket>
+              <bucket>&quot;3747-3110&quot;</bucket>
+              <bucket>&quot;30CB-BCD0&quot;</bucket>
+              <bucket>&quot;4CD7-B91C&quot;</bucket>
+              <bucket>&quot;D29C-A21F&quot;</bucket>
+              <bucket>&quot;D24B-5AC8&quot;</bucket>
+              <bucket>&quot;81BE-17CD&quot;</bucket>
+              <bucket>&quot;24DD-6D7C&quot;</bucket>
+              <bucket>&quot;6F50-08B6&quot;</bucket>
+              <bucket>&quot;DBF0-2EA3&quot;</bucket>
+              <bucket>&quot;59DB-8465&quot;</bucket>
+              <bucket>&quot;EE63-4E57&quot;</bucket>
+              <bucket>&quot;A105-470B&quot;</bucket>
+              <bucket>&quot;8078-6154&quot;</bucket>
+              <bucket>&quot;388D-DB68&quot;</bucket>
+              <bucket>&quot;6BE1-09FB&quot;</bucket>
+              <bucket>&quot;6413-42F1&quot;</bucket>
+              <bucket>&quot;097B-A688&quot;</bucket>
+              <bucket>&quot;56A5-271B&quot;</bucket>
+              <bucket>&quot;03D3-AA88&quot;</bucket>
+              <bucket>&quot;7DA1-A202&quot;</bucket>
+              <bucket>&quot;2BD8-20A6&quot;</bucket>
+              <bucket>&quot;8892-77D8&quot;</bucket>
+              <bucket>&quot;411F-6325&quot;</bucket>
+              <bucket>&quot;E442-1FEE&quot;</bucket>
+              <bucket>&quot;E47D-E3C5&quot;</bucket>
+              <bucket>&quot;D75C-3E43&quot;</bucket>
+              <bucket>&quot;07AF-3631&quot;</bucket>
+              <bucket>&quot;DCD4-C785&quot;</bucket>
+              <bucket>&quot;FB5B-C127&quot;</bucket>
+              <bucket>&quot;7486-A1B6&quot;</bucket>
+              <bucket>&quot;184D-06FF&quot;</bucket>
+              <bucket>&quot;93B1-6510&quot;</bucket>
+              <bucket>&quot;0BAF-7454&quot;</bucket>
+              <bucket>&quot;DF5F-5ED9&quot;</bucket>
+              <bucket>&quot;5381-86E4&quot;</bucket>
+              <bucket>&quot;81F1-950F&quot;</bucket>
+              <bucket>&quot;34FB-D8F3&quot;</bucket>
+              <bucket>&quot;7D95-B5B1&quot;</bucket>
+              <bucket>&quot;7D2D-3831&quot;</bucket>
+              <bucket>&quot;60A3-AFA2&quot;</bucket>
+              <bucket>&quot;9412-7AA6&quot;</bucket>
+              <bucket>&quot;6C86-3DC0&quot;</bucket>
+              <bucket>&quot;6A8B-EC82&quot;</bucket>
+              <bucket>&quot;4938-402A&quot;</bucket>
+              <bucket>&quot;9BC9-1288&quot;</bucket>
+              <bucket>&quot;6151-4A92&quot;</bucket>
+              <bucket>&quot;B2D6-A355&quot;</bucket>
+              <bucket>&quot;2E7B-43F0&quot;</bucket>
+              <bucket>&quot;F8D4-3CAB&quot;</bucket>
+              <bucket>&quot;BBE1-D4A5&quot;</bucket>
+              <bucket>&quot;6376-F58F&quot;</bucket>
+              <bucket>&quot;4294-03D1&quot;</bucket>
+              <bucket>&quot;682D-8FD8&quot;</bucket>
+              <bucket>&quot;468A-E249&quot;</bucket>
+              <bucket>&quot;111D-E5EF&quot;</bucket>
+              <bucket>&quot;41A7-9C19&quot;</bucket>
+              <bucket>&quot;19C3-DAE4&quot;</bucket>
+              <bucket>&quot;05DA-5423&quot;</bucket>
+              <bucket>&quot;9FE1-0345&quot;</bucket>
+              <bucket>&quot;7F91-C628&quot;</bucket>
+              <bucket>&quot;0AA2-881A&quot;</bucket>
+              <bucket>&quot;B340-5AD2&quot;</bucket>
+              <bucket>&quot;1E61-70EC&quot;</bucket>
+              <bucket>&quot;A71E-A9DC&quot;</bucket>
+              <bucket>&quot;5C7B-86C0&quot;</bucket>
+              <bucket>&quot;3A2C-ABB8&quot;</bucket>
+              <bucket>&quot;2FAE-9278&quot;</bucket>
+              <bucket>&quot;FD3F-5255&quot;</bucket>
+              <bucket>&quot;D6A7-EF72&quot;</bucket>
+              <bucket>&quot;D5B3-425C&quot;</bucket>
+              <bucket>&quot;ABDA-F749&quot;</bucket>
+              <bucket>&quot;7845-EF8F&quot;</bucket>
+              <bucket>&quot;566A-FC64&quot;</bucket>
+              <bucket>&quot;26DF-1241&quot;</bucket>
+              <bucket>&quot;22FF-9076&quot;</bucket>
+              <bucket>&quot;17AE-E715&quot;</bucket>
+              <bucket>&quot;15D4-53C2&quot;</bucket>
+              <bucket>&quot;5A65-768A&quot;</bucket>
+              <bucket>&quot;D245-5D80&quot;</bucket>
+              <bucket>&quot;851C-E7E2&quot;</bucket>
+              <bucket>&quot;5639-70C0&quot;</bucket>
+              <bucket>&quot;EEA0-C109&quot;</bucket>
+              <bucket>&quot;97F4-0B14&quot;</bucket>
+              <bucket>&quot;13FA-3559&quot;</bucket>
+              <bucket>&quot;13E5-8466&quot;</bucket>
+              <bucket>&quot;9CE9-B0D5&quot;</bucket>
+              <bucket>&quot;6AD1-5EE8&quot;</bucket>
+              <bucket>&quot;6A67-EC2C&quot;</bucket>
+              <bucket>&quot;F20A-F424&quot;</bucket>
+              <bucket>&quot;EDF2-2659&quot;</bucket>
+              <bucket>&quot;E399-E4F6&quot;</bucket>
+              <bucket>&quot;E348-E12B&quot;</bucket>
+              <bucket>&quot;DF7E-3233&quot;</bucket>
+              <bucket>&quot;D871-1F74&quot;</bucket>
+              <bucket>&quot;D18F-8C48&quot;</bucket>
+              <bucket>&quot;AB03-8820&quot;</bucket>
+              <bucket>&quot;6653-BD41&quot;</bucket>
+              <bucket>&quot;4673-EBEC&quot;</bucket>
+              <bucket>&quot;462E-03DF&quot;</bucket>
+              <bucket>&quot;211E-BC82&quot;</bucket>
+              <bucket>&quot;89A6-7EF1&quot;</bucket>
+              <bucket>&quot;79F3-8AA5&quot;</bucket>
+              <bucket>&quot;40CC-6231&quot;</bucket>
+              <bucket>&quot;09D2-46BD&quot;</bucket>
+              <bucket>&quot;5B0E-31FB&quot;</bucket>
+              <bucket>&quot;4D7E-BDA4&quot;</bucket>
+              <bucket>&quot;CCAB-4B80&quot;</bucket>
+              <bucket>&quot;AD8F-7539&quot;</bucket>
+              <bucket>&quot;6227-9D9E&quot;</bucket>
+              <bucket>&quot;1453-D3D8&quot;</bucket>
+              <bucket>&quot;307F-9BFA&quot;</bucket>
+              <bucket>&quot;9360-3A68&quot;</bucket>
+              <bucket>&quot;FAC0-942B&quot;</bucket>
+              <bucket>&quot;C395-8C36&quot;</bucket>
+              <bucket>&quot;A31A-A90C&quot;</bucket>
+              <bucket>&quot;A2B5-823F&quot;</bucket>
+              <bucket>&quot;2250-86C5&quot;</bucket>
+              <bucket>&quot;8BCA-723F&quot;</bucket>
+              <bucket>&quot;5C03-1009&quot;</bucket>
+              <bucket>&quot;2FC8-999D&quot;</bucket>
+              <bucket>&quot;1D35-190A&quot;</bucket>
+              <bucket>&quot;FBED-F86B&quot;</bucket>
+              <bucket>&quot;F9C6-39E2&quot;</bucket>
+              <bucket>&quot;E430-E462&quot;</bucket>
+              <bucket>&quot;E5C1-B122&quot;</bucket>
+              <bucket>&quot;D825-CC31&quot;</bucket>
+              <bucket>&quot;D86B-2E5E&quot;</bucket>
+              <bucket>&quot;D13E-E661&quot;</bucket>
+              <bucket>&quot;C251-2A18&quot;</bucket>
+              <bucket>&quot;9811-F345&quot;</bucket>
+              <bucket>&quot;533B-938D&quot;</bucket>
+              <bucket>&quot;205B-4D34&quot;</bucket>
+              <bucket>&quot;134B-4157&quot;</bucket>
+              <bucket>&quot;132B-F2B2&quot;</bucket>
+              <bucket>&quot;86E2-73D1&quot;</bucket>
+              <bucket>&quot;74F3-DF3D&quot;</bucket>
+              <bucket>&quot;69EC-7B13&quot;</bucket>
+              <bucket>&quot;00A3-2445&quot;</bucket>
+              <bucket>&quot;8E5B-CBBF&quot;</bucket>
+              <bucket>&quot;4C62-5BE8&quot;</bucket>
+              <bucket>&quot;DA4C-7F2E&quot;</bucket>
+              <bucket>&quot;C25C-C434&quot;</bucket>
+              <bucket>&quot;C8BC-3B77&quot;</bucket>
+              <bucket>&quot;C6EC-FEB5&quot;</bucket>
+              <bucket>&quot;B44E-8AEE&quot;</bucket>
+              <bucket>&quot;806F-B986&quot;</bucket>
+              <bucket>&quot;61E2-6540&quot;</bucket>
+              <bucket>&quot;CE90-763C&quot;</bucket>
+              <bucket>&quot;CCE7-36ED&quot;</bucket>
+              <bucket>&quot;CC7A-EE97&quot;</bucket>
+              <bucket>&quot;CACA-0D62&quot;</bucket>
+              <bucket>&quot;AEEC-804D&quot;</bucket>
+              <bucket>&quot;F997-FE6C&quot;</bucket>
+              <bucket>&quot;B995-E5CE&quot;</bucket>
+              <bucket>&quot;B990-35DA&quot;</bucket>
+              <bucket>&quot;AA67-CB22&quot;</bucket>
+              <bucket>&quot;3012-1A41&quot;</bucket>
+              <bucket>&quot;2962-039F&quot;</bucket>
+              <bucket>&quot;15B3-F392&quot;</bucket>
+              <bucket>&quot;9D01-8A02&quot;</bucket>
+              <bucket>&quot;6B20-FFDF&quot;</bucket>
+              <bucket>&quot;3A36-DA50&quot;</bucket>
+              <bucket>&quot;0FC8-561B&quot;</bucket>
+              <bucket>&quot;0DBC-596E&quot;</bucket>
+              <bucket>&quot;0CF8-1EBD&quot;</bucket>
+              <bucket>&quot;E8F5-C47D&quot;</bucket>
+              <bucket>&quot;E7F5-0AD1&quot;</bucket>
+              <bucket>&quot;E7A6-33A3&quot;</bucket>
+              <bucket>&quot;DF63-0D3C&quot;</bucket>
+              <bucket>&quot;C0C7-A3EF&quot;</bucket>
+              <bucket>&quot;BD97-F94D&quot;</bucket>
+              <bucket>&quot;6661-FA04&quot;</bucket>
+              <bucket>&quot;5395-75A1&quot;</bucket>
+              <bucket>&quot;4886-62DF&quot;</bucket>
+              <bucket>&quot;4316-C080&quot;</bucket>
+              <bucket>&quot;3994-472A&quot;</bucket>
+              <bucket>&quot;68FB-06A7&quot;</bucket>
+              <bucket>&quot;67ED-A630&quot;</bucket>
+              <bucket>&quot;58C8-63FA&quot;</bucket>
+              <bucket>&quot;45D2-369E&quot;</bucket>
+              <bucket>&quot;41DC-E8B5&quot;</bucket>
+              <bucket>&quot;38EB-ADBD&quot;</bucket>
+              <bucket>&quot;21B3-8491&quot;</bucket>
+              <bucket>&quot;03EF-5904&quot;</bucket>
+              <bucket>&quot;9F02-0D39&quot;</bucket>
+              <bucket>&quot;8EA4-9179&quot;</bucket>
+              <bucket>&quot;7FFD-C810&quot;</bucket>
+              <bucket>&quot;7BD4-7BFB&quot;</bucket>
+              <bucket>&quot;6E7B-D50D&quot;</bucket>
+              <bucket>&quot;4CCA-B1E6&quot;</bucket>
+              <bucket>&quot;DD1E-583D&quot;</bucket>
+              <bucket>&quot;DCFE-F601&quot;</bucket>
+              <bucket>&quot;CF8D-7379&quot;</bucket>
+              <bucket>&quot;B303-8962&quot;</bucket>
+              <bucket>&quot;825E-0B3A&quot;</bucket>
+              <bucket>&quot;757F-78FE&quot;</bucket>
+              <bucket>&quot;296A-A685&quot;</bucket>
+              <bucket>&quot;278C-D482&quot;</bucket>
+              <bucket>&quot;60B5-48ED&quot;</bucket>
+              <bucket>&quot;F662-DEA5&quot;</bucket>
+              <bucket>&quot;D926-DED9&quot;</bucket>
+              <bucket>&quot;D921-AC35&quot;</bucket>
+              <bucket>&quot;C385-CDBE&quot;</bucket>
+              <bucket>&quot;AEDB-BB62&quot;</bucket>
+              <bucket>&quot;9085-1FE8&quot;</bucket>
+              <bucket>&quot;5416-F925&quot;</bucket>
+              <bucket>&quot;277A-A6FA&quot;</bucket>
+              <bucket>&quot;67D7-9785&quot;</bucket>
+              <bucket>&quot;F890-975A&quot;</bucket>
+              <bucket>&quot;EE39-C8F2&quot;</bucket>
+              <bucket>&quot;DE6C-86FC&quot;</bucket>
+              <bucket>&quot;C730-6B13&quot;</bucket>
+              <bucket>&quot;B785-D8F8&quot;</bucket>
+              <bucket>&quot;B1EC-849B&quot;</bucket>
+              <bucket>&quot;A366-C17A&quot;</bucket>
+              <bucket>&quot;A91B-7DC5&quot;</bucket>
+              <bucket>&quot;A9EB-9E41&quot;</bucket>
+              <bucket>&quot;A7BB-F5A7&quot;</bucket>
+              <bucket>&quot;8026-658D&quot;</bucket>
+              <bucket>&quot;2551-DD9B&quot;</bucket>
+              <bucket>&quot;692B-7152&quot;</bucket>
+              <bucket>&quot;95D7-1CE9&quot;</bucket>
+              <bucket>&quot;10CE-8403&quot;</bucket>
+              <bucket>&quot;9C71-34AE&quot;</bucket>
+              <bucket>&quot;5B08-EF96&quot;</bucket>
+              <bucket>&quot;2B7A-9C73&quot;</bucket>
+              <bucket>&quot;0F83-39C1&quot;</bucket>
+              <bucket>&quot;F9B6-C80B&quot;</bucket>
+              <bucket>&quot;EBBD-37D4&quot;</bucket>
+              <bucket>&quot;DFA9-990E&quot;</bucket>
+              <bucket>&quot;D836-B375&quot;</bucket>
+              <bucket>&quot;D5DA-363A&quot;</bucket>
+              <bucket>&quot;C330-DAF4&quot;</bucket>
+              <bucket>&quot;BE93-0736&quot;</bucket>
+              <bucket>&quot;B5C6-F8D5&quot;</bucket>
+              <bucket>&quot;AA87-13D8&quot;</bucket>
+              <bucket>&quot;9825-45EF&quot;</bucket>
+              <bucket>&quot;9658-7750&quot;</bucket>
+              <bucket>&quot;9528-AA17&quot;</bucket>
+              <bucket>&quot;7349-CCE0&quot;</bucket>
+              <bucket>&quot;4565-62DE&quot;</bucket>
+              <bucket>&quot;4404-DE5A&quot;</bucket>
+              <bucket>&quot;0240-4D29&quot;</bucket>
+              <bucket>&quot;549F-B3E7&quot;</bucket>
+              <bucket>&quot;085C-7FC2&quot;</bucket>
+              <bucket>&quot;80BE-E2B5&quot;</bucket>
+              <bucket>&quot;52DD-757F&quot;</bucket>
+              <bucket>&quot;29F6-C6CA&quot;</bucket>
+              <bucket>&quot;07B2-D67A&quot;</bucket>
+              <bucket>&quot;9C57-828C&quot;</bucket>
+              <bucket>&quot;7F1C-20B8&quot;</bucket>
+              <bucket>&quot;4FC2-A40D&quot;</bucket>
+              <bucket>&quot;2C7D-F9F1&quot;</bucket>
+              <bucket>&quot;0C7B-2EA6&quot;</bucket>
+              <bucket>&quot;F93D-CB5A&quot;</bucket>
+              <bucket>&quot;DD78-E811&quot;</bucket>
+              <bucket>&quot;CA75-94D1&quot;</bucket>
+              <bucket>&quot;D906-B674&quot;</bucket>
+              <bucket>&quot;C54B-DBC5&quot;</bucket>
+              <bucket>&quot;B341-8D6A&quot;</bucket>
+              <bucket>&quot;ACA9-5DC2&quot;</bucket>
+              <bucket>&quot;6345-2F33&quot;</bucket>
+              <bucket>&quot;1363-6BF9&quot;</bucket>
+              <bucket>&quot;380F-A08A&quot;</bucket>
+              <bucket>&quot;64D6-0D5F&quot;</bucket>
+              <bucket>&quot;63DA-AA21&quot;</bucket>
+              <bucket>&quot;1F12-DDDA&quot;</bucket>
+              <bucket>&quot;F430-0404&quot;</bucket>
+              <bucket>&quot;F265-79B0&quot;</bucket>
+              <bucket>&quot;F98B-61B3&quot;</bucket>
+              <bucket>&quot;F60C-4888&quot;</bucket>
+              <bucket>&quot;F9E1-87E9&quot;</bucket>
+              <bucket>&quot;F5E3-48BB&quot;</bucket>
+              <bucket>&quot;F5C3-07B0&quot;</bucket>
+              <bucket>&quot;F4D2-F6F2&quot;</bucket>
+              <bucket>&quot;F1BD-033D&quot;</bucket>
+              <bucket>&quot;EFB8-ED99&quot;</bucket>
+              <bucket>&quot;EEFC-DEC7&quot;</bucket>
+              <bucket>&quot;ED73-F078&quot;</bucket>
+              <bucket>&quot;ED49-73D3&quot;</bucket>
+              <bucket>&quot;EC6A-DD76&quot;</bucket>
+              <bucket>&quot;EB4F-4D97&quot;</bucket>
+              <bucket>&quot;EACC-D1F6&quot;</bucket>
+              <bucket>&quot;EAB1-2EB2&quot;</bucket>
+              <bucket>&quot;E899-A860&quot;</bucket>
+              <bucket>&quot;E523-D168&quot;</bucket>
+              <bucket>&quot;E503-C500&quot;</bucket>
+              <bucket>&quot;E268-61EB&quot;</bucket>
+              <bucket>&quot;E62F-4FF7&quot;</bucket>
+              <bucket>&quot;E46A-3676&quot;</bucket>
+              <bucket>&quot;E28D-424B&quot;</bucket>
+              <bucket>&quot;E9B9-3944&quot;</bucket>
+              <bucket>&quot;E8B6-8BAE&quot;</bucket>
+              <bucket>&quot;E7D3-03C9&quot;</bucket>
+              <bucket>&quot;E6D9-ADEE&quot;</bucket>
+              <bucket>&quot;E4F4-11B9&quot;</bucket>
+              <bucket>&quot;E3B6-49F8&quot;</bucket>
+              <bucket>&quot;DFDC-286C&quot;</bucket>
+              <bucket>&quot;DF94-FD29&quot;</bucket>
+              <bucket>&quot;DF71-97FB&quot;</bucket>
+              <bucket>&quot;DEBE-1622&quot;</bucket>
+              <bucket>&quot;DE22-FB63&quot;</bucket>
+              <bucket>&quot;DDBF-9C79&quot;</bucket>
+              <bucket>&quot;DAE0-B44F&quot;</bucket>
+              <bucket>&quot;D970-9F5E&quot;</bucket>
+              <bucket>&quot;D954-6402&quot;</bucket>
+              <bucket>&quot;D933-AAC4&quot;</bucket>
+              <bucket>&quot;D696-9D82&quot;</bucket>
+              <bucket>&quot;D676-4ECC&quot;</bucket>
+              <bucket>&quot;D565-284D&quot;</bucket>
+              <bucket>&quot;D199-1896&quot;</bucket>
+              <bucket>&quot;D106-E487&quot;</bucket>
+              <bucket>&quot;D077-169C&quot;</bucket>
+              <bucket>&quot;D045-B6CA&quot;</bucket>
+              <bucket>&quot;D014-7DB2&quot;</bucket>
+              <bucket>&quot;D93A-CC98&quot;</bucket>
+              <bucket>&quot;D91C-815B&quot;</bucket>
+              <bucket>&quot;D39D-4015&quot;</bucket>
+              <bucket>&quot;D31B-BEF8&quot;</bucket>
+              <bucket>&quot;D8FC-E2F7&quot;</bucket>
+              <bucket>&quot;D7F8-1775&quot;</bucket>
+              <bucket>&quot;D7EE-56FC&quot;</bucket>
+              <bucket>&quot;D7C2-EAA5&quot;</bucket>
+              <bucket>&quot;D6BB-FEDF&quot;</bucket>
+              <bucket>&quot;D4D7-3C3F&quot;</bucket>
+              <bucket>&quot;D4D5-27FB&quot;</bucket>
+              <bucket>&quot;D3F6-A313&quot;</bucket>
+              <bucket>&quot;CF2F-8CA3&quot;</bucket>
+              <bucket>&quot;CDFB-6A08&quot;</bucket>
+              <bucket>&quot;CD0F-DE05&quot;</bucket>
+              <bucket>&quot;CC88-AE14&quot;</bucket>
+              <bucket>&quot;CC8A-0B1F&quot;</bucket>
+              <bucket>&quot;CC2F-670E&quot;</bucket>
+              <bucket>&quot;CBCB-9C9D&quot;</bucket>
+              <bucket>&quot;CBB3-0D7E&quot;</bucket>
+              <bucket>&quot;C661-6A1C&quot;</bucket>
+              <bucket>&quot;C292-EC0C&quot;</bucket>
+              <bucket>&quot;C250-AF15&quot;</bucket>
+              <bucket>&quot;C219-6C2E&quot;</bucket>
+              <bucket>&quot;C025-B8B6&quot;</bucket>
+              <bucket>&quot;C57E-6E4F&quot;</bucket>
+              <bucket>&quot;C08F-94F9&quot;</bucket>
+              <bucket>&quot;C6D7-A568&quot;</bucket>
+              <bucket>&quot;C5C2-985F&quot;</bucket>
+              <bucket>&quot;C016-FA12&quot;</bucket>
+              <bucket>&quot;C96F-0F3B&quot;</bucket>
+              <bucket>&quot;C2DD-9D37&quot;</bucket>
+              <bucket>&quot;C1C6-F683&quot;</bucket>
+              <bucket>&quot;C3C0-349E&quot;</bucket>
+              <bucket>&quot;C9FF-3A25&quot;</bucket>
+              <bucket>&quot;C95C-CE06&quot;</bucket>
+              <bucket>&quot;C0BE-FED0&quot;</bucket>
+              <bucket>&quot;C0A1-EB7D&quot;</bucket>
+              <bucket>&quot;BFF3-AADC&quot;</bucket>
+              <bucket>&quot;BE54-8537&quot;</bucket>
+              <bucket>&quot;BD70-7DAE&quot;</bucket>
+              <bucket>&quot;BAFA-86DF&quot;</bucket>
+              <bucket>&quot;BAB4-3AC8&quot;</bucket>
+              <bucket>&quot;B975-943A&quot;</bucket>
+              <bucket>&quot;B967-D6D3&quot;</bucket>
+              <bucket>&quot;B312-7192&quot;</bucket>
+              <bucket>&quot;B148-55FB&quot;</bucket>
+              <bucket>&quot;B97B-73D7&quot;</bucket>
+              <bucket>&quot;B61E-0F26&quot;</bucket>
+              <bucket>&quot;B59D-CA4C&quot;</bucket>
+              <bucket>&quot;B57F-B5CE&quot;</bucket>
+              <bucket>&quot;B52E-BF41&quot;</bucket>
+              <bucket>&quot;B50B-5A18&quot;</bucket>
+              <bucket>&quot;B34E-95FF&quot;</bucket>
+              <bucket>&quot;B24C-18BF&quot;</bucket>
+              <bucket>&quot;B09D-DFEC&quot;</bucket>
+              <bucket>&quot;B6EC-313E&quot;</bucket>
+              <bucket>&quot;B4E1-4A3E&quot;</bucket>
+              <bucket>&quot;B3FE-D332&quot;</bucket>
+              <bucket>&quot;B3AF-7E58&quot;</bucket>
+              <bucket>&quot;B0C3-E578&quot;</bucket>
+              <bucket>&quot;AFDF-3DA8&quot;</bucket>
+              <bucket>&quot;AFA8-5058&quot;</bucket>
+              <bucket>&quot;AF77-0F6B&quot;</bucket>
+              <bucket>&quot;AF58-5D1B&quot;</bucket>
+              <bucket>&quot;AE33-DDE7&quot;</bucket>
+              <bucket>&quot;ADF8-AD57&quot;</bucket>
+              <bucket>&quot;ACD5-5FA2&quot;</bucket>
+              <bucket>&quot;AC19-7EE7&quot;</bucket>
+              <bucket>&quot;AB81-A3A0&quot;</bucket>
+              <bucket>&quot;AB4A-E71A&quot;</bucket>
+              <bucket>&quot;AA19-95BD&quot;</bucket>
+              <bucket>&quot;A954-6310&quot;</bucket>
+              <bucket>&quot;A923-9EF6&quot;</bucket>
+              <bucket>&quot;A807-DE5D&quot;</bucket>
+              <bucket>&quot;A696-1216&quot;</bucket>
+              <bucket>&quot;A590-DF69&quot;</bucket>
+              <bucket>&quot;A531-8159&quot;</bucket>
+              <bucket>&quot;A4A4-F49C&quot;</bucket>
+              <bucket>&quot;A2FB-2D5D&quot;</bucket>
+              <bucket>&quot;A1DB-6C34&quot;</bucket>
+              <bucket>&quot;A1B4-5481&quot;</bucket>
+              <bucket>&quot;9937-CDF7&quot;</bucket>
+              <bucket>&quot;9169-FC4B&quot;</bucket>
+              <bucket>&quot;9075-A294&quot;</bucket>
+              <bucket>&quot;8766-F1E7&quot;</bucket>
+              <bucket>&quot;8663-3E02&quot;</bucket>
+              <bucket>&quot;8365-EB74&quot;</bucket>
+              <bucket>&quot;8292-6635&quot;</bucket>
+              <bucket>&quot;8233-2483&quot;</bucket>
+              <bucket>&quot;7839-CA12&quot;</bucket>
+              <bucket>&quot;7805-8A7C&quot;</bucket>
+              <bucket>&quot;7749-B277&quot;</bucket>
+              <bucket>&quot;7589-66E3&quot;</bucket>
+              <bucket>&quot;6965-C170&quot;</bucket>
+              <bucket>&quot;6280-B47F&quot;</bucket>
+              <bucket>&quot;6112-8476&quot;</bucket>
+              <bucket>&quot;6010-A052&quot;</bucket>
+              <bucket>&quot;6313-8E62&quot;</bucket>
+              <bucket>&quot;8822-B9C5&quot;</bucket>
+              <bucket>&quot;5988-3855&quot;</bucket>
+              <bucket>&quot;5818-560C&quot;</bucket>
+              <bucket>&quot;5731-90E6&quot;</bucket>
+              <bucket>&quot;5642-6F1E&quot;</bucket>
+              <bucket>&quot;5544-4583&quot;</bucket>
+              <bucket>&quot;5468-EEE1&quot;</bucket>
+              <bucket>&quot;5237-1B85&quot;</bucket>
+              <bucket>&quot;5160-53BD&quot;</bucket>
+              <bucket>&quot;5060-A677&quot;</bucket>
+              <bucket>&quot;4969-9A35&quot;</bucket>
+              <bucket>&quot;2937-EB65&quot;</bucket>
+              <bucket>&quot;2698-A448&quot;</bucket>
+              <bucket>&quot;2374-7581&quot;</bucket>
+              <bucket>&quot;2219-56CA&quot;</bucket>
+              <bucket>&quot;1914-B934&quot;</bucket>
+              <bucket>&quot;1799-5B3F&quot;</bucket>
+              <bucket>&quot;1609-65E1&quot;</bucket>
+              <bucket>&quot;1424-0B0C&quot;</bucket>
+              <bucket>&quot;1217-CE30&quot;</bucket>
+              <bucket>&quot;1180-BEC9&quot;</bucket>
+              <bucket>&quot;1054-9C3B&quot;</bucket>
+              <bucket>&quot;0868-097F&quot;</bucket>
+              <bucket>&quot;0322-D46B&quot;</bucket>
+              <bucket>&quot;0210-E0D8&quot;</bucket>
+              <bucket>&quot;0145-DBFC&quot;</bucket>
+              <bucket>&quot;920B-7B40&quot;</bucket>
+              <bucket>&quot;819A-2C9C&quot;</bucket>
+              <bucket>&quot;774E-685D&quot;</bucket>
+              <bucket>&quot;676C-C884&quot;</bucket>
+              <bucket>&quot;637B-DBAD&quot;</bucket>
+              <bucket>&quot;626A-9377&quot;</bucket>
+              <bucket>&quot;606E-A262&quot;</bucket>
+              <bucket>&quot;596B-33F4&quot;</bucket>
+              <bucket>&quot;586E-5C14&quot;</bucket>
+              <bucket>&quot;565B-C207&quot;</bucket>
+              <bucket>&quot;531D-788E&quot;</bucket>
+              <bucket>&quot;528C-3E0D&quot;</bucket>
+              <bucket>&quot;489B-14EC&quot;</bucket>
+              <bucket>&quot;469A-8121&quot;</bucket>
+              <bucket>&quot;465A-91D1&quot;</bucket>
+              <bucket>&quot;450D-13A9&quot;</bucket>
+              <bucket>&quot;427A-8C69&quot;</bucket>
+              <bucket>&quot;327B-F6D3&quot;</bucket>
+              <bucket>&quot;284C-8CB0&quot;</bucket>
+              <bucket>&quot;267F-F71D&quot;</bucket>
+              <bucket>&quot;246E-3383&quot;</bucket>
+              <bucket>&quot;155B-42BE&quot;</bucket>
+              <bucket>&quot;151D-1FF2&quot;</bucket>
+              <bucket>&quot;130F-32AB&quot;</bucket>
+              <bucket>&quot;076F-8AA3&quot;</bucket>
+              <bucket>&quot;041A-31B0&quot;</bucket>
+              <bucket>&quot;022A-0219&quot;</bucket>
+              <bucket>&quot;96F4-896C&quot;</bucket>
+              <bucket>&quot;95CB-4E31&quot;</bucket>
+              <bucket>&quot;84E7-02D4&quot;</bucket>
+              <bucket>&quot;83FD-F920&quot;</bucket>
+              <bucket>&quot;81FF-8D6C&quot;</bucket>
+              <bucket>&quot;74F2-5C55&quot;</bucket>
+              <bucket>&quot;73CF-4956&quot;</bucket>
+              <bucket>&quot;72A2-1105&quot;</bucket>
+              <bucket>&quot;71CC-7412&quot;</bucket>
+              <bucket>&quot;66BC-7AC0&quot;</bucket>
+              <bucket>&quot;65A0-5D04&quot;</bucket>
+              <bucket>&quot;63BF-A86A&quot;</bucket>
+              <bucket>&quot;62A3-DEA7&quot;</bucket>
+              <bucket>&quot;61CC-2C1D&quot;</bucket>
+              <bucket>&quot;58F5-C8FC&quot;</bucket>
+              <bucket>&quot;51A4-EA6E&quot;</bucket>
+              <bucket>&quot;49B2-0364&quot;</bucket>
+              <bucket>&quot;47A0-559B&quot;</bucket>
+              <bucket>&quot;45FF-ACE6&quot;</bucket>
+              <bucket>&quot;45F9-3A37&quot;</bucket>
+              <bucket>&quot;42CC-040A&quot;</bucket>
+              <bucket>&quot;41EC-F2AA&quot;</bucket>
+              <bucket>&quot;40BE-EEAF&quot;</bucket>
+              <bucket>&quot;37EE-004B&quot;</bucket>
+              <bucket>&quot;29C2-1A3F&quot;</bucket>
+              <bucket>&quot;27CD-A6BF&quot;</bucket>
+              <bucket>&quot;23FC-93A5&quot;</bucket>
+              <bucket>&quot;21CB-EF3E&quot;</bucket>
+              <bucket>&quot;20BA-5868&quot;</bucket>
+              <bucket>&quot;17AD-99F5&quot;</bucket>
+              <bucket>&quot;16FB-8835&quot;</bucket>
+              <bucket>&quot;13E5-2F17&quot;</bucket>
+              <bucket>&quot;12B5-11CC&quot;</bucket>
+              <bucket>&quot;11AE-3E4D&quot;</bucket>
+              <bucket>&quot;08FC-817E&quot;</bucket>
+              <bucket>&quot;07F1-62C3&quot;</bucket>
+              <bucket>&quot;07C3-7429&quot;</bucket>
+              <bucket>&quot;06E8-4FD4&quot;</bucket>
+              <bucket>&quot;06B9-B79D&quot;</bucket>
+              <bucket>&quot;05B0-755F&quot;</bucket>
+              <bucket>&quot;02DA-7A72&quot;</bucket>
+              <bucket>&quot;00D4-DD53&quot;</bucket>
+              <bucket>&quot;9E22-6287&quot;</bucket>
+              <bucket>&quot;9E8E-F2FF&quot;</bucket>
+              <bucket>&quot;9E7A-1F70&quot;</bucket>
+              <bucket>&quot;9DFE-1FD5&quot;</bucket>
+              <bucket>&quot;9D7B-9B37&quot;</bucket>
+              <bucket>&quot;9D3C-DA45&quot;</bucket>
+              <bucket>&quot;9CC0-FF43&quot;</bucket>
+              <bucket>&quot;9C24-CD7A&quot;</bucket>
+              <bucket>&quot;9C7D-E1B1&quot;</bucket>
+              <bucket>&quot;9C6C-E5CE&quot;</bucket>
+              <bucket>&quot;9BD6-2C43&quot;</bucket>
+              <bucket>&quot;9AAD-D3C1&quot;</bucket>
+              <bucket>&quot;9AAB-DCD0&quot;</bucket>
+              <bucket>&quot;9A87-71F6&quot;</bucket>
+              <bucket>&quot;8F7F-015D&quot;</bucket>
+              <bucket>&quot;8EE9-E86D&quot;</bucket>
+              <bucket>&quot;8ED3-4377&quot;</bucket>
+              <bucket>&quot;8DA7-0090&quot;</bucket>
+              <bucket>&quot;8D34-EBDF&quot;</bucket>
+              <bucket>&quot;8B79-18F1&quot;</bucket>
+              <bucket>&quot;8ACE-C5CE&quot;</bucket>
+              <bucket>&quot;8A40-C85A&quot;</bucket>
+              <bucket>&quot;8A5B-3D6E&quot;</bucket>
+              <bucket>&quot;7FA1-BC64&quot;</bucket>
+              <bucket>&quot;7DD6-128C&quot;</bucket>
+              <bucket>&quot;7B47-C915&quot;</bucket>
+              <bucket>&quot;7B9D-8612&quot;</bucket>
+              <bucket>&quot;7AA0-5766&quot;</bucket>
+              <bucket>&quot;7A98-768E&quot;</bucket>
+              <bucket>&quot;6FE3-2270&quot;</bucket>
+              <bucket>&quot;6E64-8D30&quot;</bucket>
+              <bucket>&quot;6DEB-F440&quot;</bucket>
+              <bucket>&quot;6CAD-47F0&quot;</bucket>
+              <bucket>&quot;5F2E-A68B&quot;</bucket>
+              <bucket>&quot;5D73-961A&quot;</bucket>
+              <bucket>&quot;5B11-3DB3&quot;</bucket>
+              <bucket>&quot;4F64-A0E2&quot;</bucket>
+              <bucket>&quot;4E65-CCD0&quot;</bucket>
+              <bucket>&quot;4DA0-81D7&quot;</bucket>
+              <bucket>&quot;4CA1-F139&quot;</bucket>
+              <bucket>&quot;4A0E-9958&quot;</bucket>
+              <bucket>&quot;3EB2-9111&quot;</bucket>
+              <bucket>&quot;3D71-8DC2&quot;</bucket>
+              <bucket>&quot;3CD6-5587&quot;</bucket>
+              <bucket>&quot;3C7D-86ED&quot;</bucket>
+              <bucket>&quot;3B11-DF28&quot;</bucket>
+              <bucket>&quot;2F85-AF81&quot;</bucket>
+              <bucket>&quot;2F04-931F&quot;</bucket>
+              <bucket>&quot;2ED2-2CEC&quot;</bucket>
+              <bucket>&quot;2CA8-4E1B&quot;</bucket>
+              <bucket>&quot;2BEA-43B2&quot;</bucket>
+              <bucket>&quot;2A20-28CD&quot;</bucket>
+              <bucket>&quot;2A04-49D1&quot;</bucket>
+              <bucket>&quot;2A9F-6BD2&quot;</bucket>
+              <bucket>&quot;1F0F-458C&quot;</bucket>
+              <bucket>&quot;1E61-B76A&quot;</bucket>
+              <bucket>&quot;1CB3-F7D7&quot;</bucket>
+              <bucket>&quot;1C6C-3B67&quot;</bucket>
+              <bucket>&quot;1B7F-73A9&quot;</bucket>
+              <bucket>&quot;1AC8-361F&quot;</bucket>
+              <bucket>&quot;1A6D-AF5D&quot;</bucket>
+              <bucket>&quot;0EA5-3A95&quot;</bucket>
+              <bucket>&quot;0D1B-DEC2&quot;</bucket>
+              <bucket>&quot;0CED-EE28&quot;</bucket>
+              <bucket>&quot;39FC-7149&quot;</bucket>
+              <bucket>&quot;0AF4-EC15&quot;</bucket>
+              <bucket>&quot;6A2B-42DB&quot;</bucket>
+              <bucket>&quot;291F-B604&quot;</bucket>
+              <bucket>&quot;380E-44B4&quot;</bucket>
+              <bucket>&quot;F72D-261D&quot;</bucket>
+              <bucket>&quot;EB8F-204D&quot;</bucket>
+              <bucket>&quot;E55E-9436&quot;</bucket>
+              <bucket>&quot;D186-CBF5&quot;</bucket>
+              <bucket>&quot;7CFC-C4DA&quot;</bucket>
+              <bucket>&quot;9C71-61AE&quot;</bucket>
+              <bucket>&quot;6C42-A719&quot;</bucket>
+              <bucket>&quot;2DD1-FD7F&quot;</bucket>
+              <bucket>&quot;F3A3-10CE&quot;</bucket>
+              <bucket>&quot;B98B-4689&quot;</bucket>
+              <bucket>&quot;FD0B-7B0A&quot;</bucket>
+              <bucket>&quot;EB66-D679&quot;</bucket>
+              <bucket>&quot;45D7-5C8A&quot;</bucket>
+              <bucket>&quot;41FE-D257&quot;</bucket>
+              <bucket>&quot;39A2-9B0A&quot;</bucket>
+              <bucket>&quot;4C88-27A1&quot;</bucket>
+              <bucket>&quot;A2D0-E2D2&quot;</bucket>
+              <bucket>&quot;B013-7D0C&quot;</bucket>
+              <bucket>&quot;4188-C61D&quot;</bucket>
+              <bucket>&quot;4D59-B831&quot;</bucket>
+              <bucket>&quot;279C-7342&quot;</bucket>
+              <bucket>&quot;F83C-CA1D&quot;</bucket>
+              <bucket>&quot;F4A3-2126&quot;</bucket>
+              <bucket>&quot;7269-88EC&quot;</bucket>
+              <bucket>&quot;00E4-3D60&quot;</bucket>
+              <bucket>&quot;0A05-3943&quot;</bucket>
+              <bucket>&quot;F0C3-4859&quot;</bucket>
+              <bucket>&quot;B76C-D9CE&quot;</bucket>
+              <bucket>&quot;7279-6591&quot;</bucket>
+              <bucket>&quot;8CF6-3079&quot;</bucket>
+              <bucket>&quot;1705-0DE5&quot;</bucket>
+              <bucket>&quot;4BE1-4A7B&quot;</bucket>
+              <bucket>&quot;DFE3-6FA7&quot;</bucket>
+              <bucket>&quot;4657-FE18&quot;</bucket>
+              <bucket>&quot;3560-C117&quot;</bucket>
+              <bucket>&quot;1147-7E2F&quot;</bucket>
+              <bucket>&quot;152E-8DB1&quot;</bucket>
+              <bucket>&quot;817D-28CE&quot;</bucket>
+              <bucket>&quot;AF5D-A8C8&quot;</bucket>
+              <bucket>&quot;3476-CA56&quot;</bucket>
+              <bucket>&quot;1A7C-19DB&quot;</bucket>
+              <bucket>&quot;F573-D043&quot;</bucket>
+              <bucket>&quot;DB6C-3B2F&quot;</bucket>
+              <bucket>&quot;12F7-BCBB&quot;</bucket>
+              <bucket>&quot;52CC-3E9E&quot;</bucket>
+              <bucket>&quot;07F5-A45D&quot;</bucket>
+              <bucket>&quot;D49C-096C&quot;</bucket>
+              <bucket>&quot;EE91-1A9C&quot;</bucket>
+              <bucket>&quot;DEC5-9319&quot;</bucket>
+              <bucket>&quot;2F98-E645&quot;</bucket>
+              <bucket>&quot;B407-ABCA&quot;</bucket>
+              <bucket>&quot;EC6E-7F42&quot;</bucket>
+              <bucket>&quot;541F-3E19&quot;</bucket>
+              <bucket>&quot;B48C-47D0&quot;</bucket>
+              <bucket>&quot;F968-671C&quot;</bucket>
+              <bucket>&quot;040C-EDED&quot;</bucket>
+              <bucket>&quot;03C5-51AD&quot;</bucket>
+              <bucket>&quot;28EA-A010&quot;</bucket>
+              <bucket>&quot;C79A-E5E1&quot;</bucket>
+              <bucket>&quot;1C87-44CB&quot;</bucket>
+              <bucket>&quot;E1B4-9AA1&quot;</bucket>
+              <bucket>&quot;CFE3-312D&quot;</bucket>
+              <bucket>&quot;7EE7-2C43&quot;</bucket>
+              <bucket>&quot;5476-CA0D&quot;</bucket>
+              <bucket>&quot;0678-748A&quot;</bucket>
+              <bucket>&quot;DA8E-9496&quot;</bucket>
+              <bucket>&quot;6FE1-C8A8&quot;</bucket>
+              <bucket>&quot;79F7-78EC&quot;</bucket>
+              <bucket>&quot;5D69-D350&quot;</bucket>
+              <bucket>&quot;6176-3BEE&quot;</bucket>
+              <bucket>&quot;0C23-26DD&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.048z5ga1svnkl618dzk8e0jngzdh].[none:LastName:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:LastName:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:LastName:nk]' member='&quot;Albery&quot;' />
+                <groupfilter function='member' level='[none:LastName:nk]' member='&quot;Bastable&quot;' />
+                <groupfilter function='member' level='[none:LastName:nk]' member='&quot;Casburn&quot;' />
+                <groupfilter function='member' level='[none:LastName:nk]' member='&quot;Chalcot&quot;' />
+                <groupfilter function='member' level='[none:LastName:nk]' member='&quot;Duncklee&quot;' />
+                <groupfilter function='member' level='[none:LastName:nk]' member='&quot;Incogna&quot;' />
+                <groupfilter function='member' level='[none:LastName:nk]' member='&quot;Nannizzi&quot;' />
+                <groupfilter function='member' level='[none:LastName:nk]' member='&quot;Pea&quot;' />
+                <groupfilter function='member' level='[none:LastName:nk]' member='&quot;Quenby&quot;' />
+                <groupfilter function='member' level='[none:LastName:nk]' member='&quot;Seage&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.048z5ga1svnkl618dzk8e0jngzdh].[none:LastName:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='border-style' scope='rows' value='solid' />
+            <format attr='border-color' scope='rows' value='#ffffff' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-color' scope='rows' value='#b07aa1' />
+            <format attr='border-style' scope='rows' value='solid' />
+            <format attr='band-color' scope='cols' value='#00000000' />
+            <format attr='background-color' data-class='total' scope='cols' value='#00000000' />
+            <format attr='background-color' data-class='subtotal' value='#00000000' />
+            <format attr='border-color' data-class='total' value='#9b93cb' />
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='cols' value='1' />
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#9b93cb' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.048z5ga1svnkl618dzk8e0jngzdh].[none:EmployeeID:nk] / ([federated.048z5ga1svnkl618dzk8e0jngzdh].[none:FirstName:nk] / [federated.048z5ga1svnkl618dzk8e0jngzdh].[none:LastName:nk]))</rows>
+        <cols>[federated.048z5ga1svnkl618dzk8e0jngzdh].[attr:Attrition_Probability:qk]</cols>
+      </table>
+      <simple-id uuid='{C3A76CE4-85DD-433A-B61D-C228F9A31C77}' />
+    </worksheet>
+    <worksheet name='Probability Distribution'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='employee_attrition_predictions' name='federated.048z5ga1svnkl618dzk8e0jngzdh' />
+          </datasources>
+          <datasource-dependencies datasource='federated.048z5ga1svnkl618dzk8e0jngzdh'>
+            <column aggregation='None' datatype='integer' name='[Attrition Probability (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='-2' formula='[Attrition_Probability]' peg='0' size='0.054' />
+            </column>
+            <column caption='Attrition Probability' datatype='real' name='[Attrition_Probability]' role='measure' type='quantitative' />
+            <column-instance column='[Attrition_Probability]' derivation='Count' name='[cnt:Attrition_Probability:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Attrition Probability (bin)]' derivation='None' name='[none:Attrition Probability (bin):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#9b93cb' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.048z5ga1svnkl618dzk8e0jngzdh].[cnt:Attrition_Probability:qk]</rows>
+        <cols>[federated.048z5ga1svnkl618dzk8e0jngzdh].[none:Attrition Probability (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.048z5ga1svnkl618dzk8e0jngzdh].[Attrition Probability (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{EDEDDC44-2369-4D86-A6D3-66641998B322}' />
+    </worksheet>
+    <worksheet name='Risk by Department'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='employee_attrition_predictions' name='federated.048z5ga1svnkl618dzk8e0jngzdh' />
+          </datasources>
+          <datasource-dependencies datasource='federated.048z5ga1svnkl618dzk8e0jngzdh'>
+            <column caption='Attrition Probability' datatype='real' name='[Attrition_Probability]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Department]' role='dimension' type='nominal' />
+            <column-instance column='[Attrition_Probability]' derivation='Avg' name='[avg:Attrition_Probability:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Department]' derivation='None' name='[none:Department:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#9b93cb' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.048z5ga1svnkl618dzk8e0jngzdh].[none:Department:nk]</rows>
+        <cols>[federated.048z5ga1svnkl618dzk8e0jngzdh].[avg:Attrition_Probability:qk]</cols>
+      </table>
+      <simple-id uuid='{6EAF1F30-F8C3-4977-AAB0-3323374EBDD1}' />
+    </worksheet>
+    <worksheet name='Top Drivers'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='feature_importance' name='federated.0hyojky158e2fq1bir3la0jbanov' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hyojky158e2fq1bir3la0jbanov'>
+            <column datatype='string' name='[Feature]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Importance]' role='measure' type='quantitative' />
+            <column-instance column='[Feature]' derivation='None' name='[none:Feature:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Importance]' derivation='Sum' name='[sum:Importance:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0hyojky158e2fq1bir3la0jbanov].[none:Feature:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0hyojky158e2fq1bir3la0jbanov].[sum:Importance:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#9b93cb' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0hyojky158e2fq1bir3la0jbanov].[none:Feature:nk]</rows>
+        <cols>[federated.0hyojky158e2fq1bir3la0jbanov].[sum:Importance:qk]</cols>
+      </table>
+      <simple-id uuid='{94DE0EC6-1355-4C00-B063-46DA80C73961}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='49051' id='3' name='Top Drivers' w='48929' x='1071' y='945'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='49059' id='5' name='Probability Distribution' w='48929' x='1071' y='49996'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='49051' id='6' name='Risk by Department' w='48929' x='50000' y='945'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='49059' id='7' name='High-Risk Employees' w='48929' x='50000' y='49996'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{A0339C0C-B4F4-476C-AF9A-26F56D5359A0}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1 (2)'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='49051' id='3' name='Top Drivers' w='48929' x='1071' y='945'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='49059' id='5' name='Probability Distribution' w='48929' x='1071' y='49996'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='49051' id='6' name='Risk by Department' w='48929' x='50000' y='945'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='49059' id='7' name='High-Risk Employees' w='48929' x='50000' y='49996'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{1F5BF074-21D6-40C3-A04F-907914968959}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='51'>
+    <window class='worksheet' name='Top Drivers'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9FDDB817-65F7-4F6A-93AF-E81C56193676}' />
+    </window>
+    <window class='worksheet' name='Probability Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{307039CB-E968-4C2C-B150-B52BBA603BA9}' />
+    </window>
+    <window class='worksheet' name='Risk by Department'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{24BE9061-777F-4BA2-83A1-1E996852BE9A}' />
+    </window>
+    <window class='worksheet' name='High-Risk Employees'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BEC86B5B-B5AE-4E29-85F7-67A7258FA6C3}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='High-Risk Employees' />
+        <viewpoint name='Probability Distribution'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Risk by Department'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Top Drivers' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{4F28A011-8B9B-4EE9-AD12-BB80697DE901}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1 (2)'>
+      <viewpoints>
+        <viewpoint name='High-Risk Employees' />
+        <viewpoint name='Probability Distribution'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Risk by Department'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Top Drivers' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{7F78BF64-DF6A-4A9E-B832-12850645C40A}' />
+    </window>
+  </windows>
+</workbook>
